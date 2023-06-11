@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>216</width>
+    <height>232</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>216</width>
+    <height>232</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>216</width>
+    <height>232</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Choose color</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../Icons/Icons.qrc">
+    <normaloff>:/Icons/Logo-EAUT.png</normaloff>:/Icons/Logo-EAUT.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(170, 170, 255);</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>185</width>
+     <height>166</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>1</pointsize>
+    </font>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="4">
+     <widget class="QPushButton" name="pushButton_brown">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>brown</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+		border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(165, 42, 42);
+	color: rgb(165, 42, 42);
+}</string>
+      </property>
+      <property name="text">
+       <string>brown</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QPushButton" name="pushButton_teal">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>teal</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(0, 128, 128);
+color: rgb(0, 128, 128);
+}</string>
+      </property>
+      <property name="text">
+       <string>teal</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="pushButton_cyan">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>cyan</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	color: rgb(0, 255, 255);
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(0, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>cyan</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="pushButton_purple">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>purple</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(128, 0, 128);
+color: rgb(128, 0, 128);
+}</string>
+      </property>
+      <property name="text">
+       <string>purple</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pushButton_green">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>green</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(0, 255, 0);
+	color: rgb(0, 255, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string>green</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QPushButton" name="pushButton_silver">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>silver</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(192, 192, 192);
+color: rgb(192, 192, 192);
+}</string>
+      </property>
+      <property name="text">
+       <string>silver</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="pushButton_black">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>black</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string>black</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="pushButton_orange">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>orange</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(255, 165, 0);
+	color: rgb(255, 165, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string>orange</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="pushButton_pink">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>pink</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	color: rgb(255, 192, 203);
+	background-color: rgb(255, 192, 203);
+}</string>
+      </property>
+      <property name="text">
+       <string>pink</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="pushButton_white">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>white</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+
+}</string>
+      </property>
+      <property name="text">
+       <string>white</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QPushButton" name="pushButton_bronze">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>bronze</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(205, 127, 50);
+color: rgb(205, 127, 50);
+}</string>
+      </property>
+      <property name="text">
+       <string>bronze</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pushButton_maroon">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>maroon</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	color: rgb(128, 0, 0);
+	background-color:rgb(128, 0, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string>maroon</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton_red">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>red</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+	border:1px solid rgb(255, 255, 0);
+	color: rgb(255, 0, 0);
+	background-color: rgb(255, 0, 0);
+
+}</string>
+      </property>
+      <property name="text">
+       <string>red</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="pushButton_navy">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>navy</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(0, 0, 128);
+	color: rgb(0, 0, 128);
+}</string>
+      </property>
+      <property name="text">
+       <string>navy</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="pushButton_magenta">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>magenta</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(255, 0, 255);
+	color:rgb(255, 0, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>magenta</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pushButton_gray">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>gray</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(128, 128, 128);
+	color: rgb(128, 128, 128);
+}</string>
+      </property>
+      <property name="text">
+       <string>gray</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="pushButton_gold">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>gold</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(255, 215, 0);
+color: rgb(255, 215, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string>gold</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pushButton_olive">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>olive</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(128, 128, 0);
+	color:rgb(128, 128, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string>olive</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="pushButton_blue">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>blue</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(0, 0, 255);
+	color: rgb(0, 0, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>blue</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="pushButton_yellow">
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>1</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>yellow</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:!pressed{
+	border-radius:5px;
+border:1px solid rgb(255, 255, 0);
+	background-color: rgb(255, 255, 0);color: rgb(255, 255, 0);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>yellow</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../Icons/Icons.qrc">
+        <normaloff>:/Icons/done.png</normaloff>:/Icons/done.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>2</width>
+        <height>2</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>200</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Icons/Icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

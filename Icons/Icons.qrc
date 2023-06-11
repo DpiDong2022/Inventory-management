@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="Icons">
+    <file>800px-Search_Icon.svg.png</file>
+    <file>add.png</file>
+    <file>addItem.png</file>
+    <file>background.jpg</file>
+    <file>done.png</file>
+    <file>home.png</file>
+    <file>icon.png</file>
+    <file>icons8-color-swatch-48.png</file>
+    <file>left-arrow.png</file>
+    <file>Logo-EAUT.png</file>
+    <file>minus.png</file>
+    <file>order.png</file>
+    <file>settings.png</file>
+    <file>setup_icon.png</file>
+    <file>specialFeature.png</file>
+    <file>stick.png</file>
+    <file>URD.png</file>
+    <file>white.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,98 @@
+1.Có thể giải thích cấu trúc dữ liệu của cơ sở dữ liệu SQLite3 mà bạn đã thiết kế để quản lý thông tin 
+hàng tồn kho?
+cấu trúc dữ liệu gồm hai bảng, đó là bảng sản phẩm và bảng mặt hàng tương ứng(item)
+ở bảng sản phẩm gồm các thông tin chung như id, tên, kiểu sản phẩm, loại, thương hiệu, 
+chất liệu, chú thích; ở bảng còn lại thì bao gồm ID item, id product, giá, số lượng,
+màu, kích cỡ, ảnh; ở mỗi bảng sẽ có ngày cập nhật và ngày xóa để lọc ra các phản phẩm và item hợp lệ
+
+2.Làm thế nào bạn đã sử dụng PyQt5 để tạo giao diện người dùng (GUI) cho phần mềm quản lý hàng tồn kho?
+tôi đã tìm và đọc một quyển sách pyqt5 có hướng dẫn và thực hành sử dụng câu lệnh và tool kéo thả giao 
+diện người dùng, quyển sách cho người mới học, sau khi có kiến thức cơ bản về pyqt5 tôi đã 
+bắt tay vào làm phần mềm, trong quá trình làm có những phần khó khăn tôi đã dùng
+các kênh trên browser để giải đáp và dần dần hoàn thiện phần GUI
+
+7.Làm thế nào bạn đã xử lý việc xóa sản phẩm khỏi cơ sở dữ liệu?
+tôi làm xóa mềm, những phần dữ liệu được xóa trên phần mềm chỉ là bị xóa khỏi màn hình hiển thị và nõ vẫn tồn tại ở cơ sở dữ liệu nhưng những dự liệu được xóa sữ bị lọc khỏi các 
+khâu xử lý của phần mềm bằng ngày thêm và ngày xóa.
+
+;4.Có thể giải thích quy trình và logic của chức năng "Thêm sản phẩm" trong phần mềm?
+Quy trình "Thêm sản phẩm":
+
+-bạn có thể giải thích cụ thể các bước mà người dùng phải thực hiện để thêm một sản phẩm mới vào hệ thống.
+Hãy mô tả cách người dùng tương tác với giao diện người dùng và cung cấp thông tin liên quan để thêm sản phẩm.
+Logic của chức năng "Thêm sản phẩm":
+
+-bạn có thể giải thích cách mã code của bạn xử lý việc thêm sản phẩm vào cơ sở dữ liệu.
+Hãy trình bày cách bạn xác thực và xử lý dữ liệu đầu vào từ người dùng, bao gồm kiểm tra tính hợp lệ của dữ liệu và ngăn ngừa lỗi hoặc không nhất quán trong thông tin sản phẩm.
+
+-bạn có thể nói về cách bạn đảm bảo tính duy nhất của các sản phẩm trong cơ sở dữ liệu và xử lý trường hợp trùng lặp.
+Giao tiếp với người dùng:
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+
+
+
+
+
+
+
+
+;6.Bạn đã áp dụng các biện pháp nào để đảm bảo tính toàn vẹn dữ liệu và kiểm tra đầu vào của người dùng 
+khi thêm hoặc sửa đổi thông tin sản phẩm?
+-Kiểm tra đầu vào của người dùng:
++Hãy mô tả các biện pháp bạn đã áp dụng để kiểm tra tính hợp lệ của dữ liệu đầu vào từ người dùng khi thêm hoặc sửa đổi thông tin sản phẩm.
++Có thể bạn đã sử dụng các kiểm tra hợp lệ như kiểm tra định dạng, kiểm tra giới hạn đầu vào, hoặc kiểm tra loại dữ liệu để đảm bảo dữ liệu nhập vào là hợp lệ và đáng tin cậy.
+
+-Xử lý lỗi và thông báo cho người dùng:
++Hãy giải thích cách phần mềm của bạn xử lý các lỗi hoặc không nhất quán trong dữ liệu đầu vào từ người dùng.
++Có thể bạn đã cung cấp thông báo lỗi hoặc gợi ý cho người dùng khi họ nhập dữ liệu không hợp lệ và giúp họ sửa lỗi.
+
+
+;8.Có thể giải thích cách bạn đã triển khai chức năng tìm kiếm sản phẩm và trình bày kết quả tìm kiếm một 
+cách hiệu quả?
+-Triển khai chức năng tìm kiếm sản phẩm:
+Hãy mô tả cách bạn đã xây dựng chức năng tìm kiếm sản phẩm trong phần mềm của bạn.
+Có thể bạn đã sử dụng một trường tìm kiếm để người dùng nhập từ khóa tìm kiếm hoặc có thể bạn đã triển khai các tùy chọn tìm kiếm nâng cao.
+
+-Xử lý tìm kiếm và truy vấn cơ sở dữ liệu:
+Hãy giải thích cách mã code của bạn thực hiện tìm kiếm trong cơ sở dữ liệu SQLite3.
+Có thể bạn đã sử dụng các truy vấn SQL để truy xuất các sản phẩm phù hợp với từ khóa tìm kiếm và trả về kết quả.
+
+-Hiển thị kết quả tìm kiếm:
+Hãy trình bày cách bạn hiển thị kết quả tìm kiếm cho người dùng.
+Có thể bạn đã sử dụng giao diện người dùng để hiển thị danh sách các sản phẩm phù hợp với từ khóa tìm kiếm hoặc có thể bạn đã thực hiện phân trang kết quả nếu có quá nhiều sản phẩm.
+
+-Sắp xếp và lọc kết quả:
+Nếu có, hãy nói về cách bạn đã triển khai các chức năng sắp xếp và lọc kết quả tìm kiếm để người dùng có thể tùy chỉnh và thu hẹp phạm vi tìm kiếm.
+
+
+
+;10.Bạn đã xử lý cách thức gửi thông báo hoặc thông báo lỗi cho người dùng khi có lỗi xảy ra trong quá 
+trình thêm, sửa, xóa hoặc tìm kiếm sản phẩm?
+-Sử dụng hộp thoại cảnh báo: Trong trường hợp xảy ra lỗi, bạn có thể sử dụng hộp thoại cảnh báo để thông báo cho người dùng biết về lỗi cụ thể. 
+Hộp thoại cảnh báo có thể hiển thị thông điệp lỗi và một nút để người dùng đồng ý hoặc đóng thông báo. PyQT5 cung cấp các lớp 
+hộp thoại như QMessageBox để thực hiện điều này.
+
+-Hiển thị thông báo trong giao diện người dùng: Bạn có thể thêm một phần hiển thị thông báo trong giao diện người dùng để hiển thị 
+thông tin lỗi hoặc thông báo cho người dùng. Điều này có thể là một vùng văn bản hoặc một cửa sổ thông báo nhỏ trong giao diện.
+
+-Ghi log lỗi: Khi xảy ra lỗi, bạn có thể ghi log lỗi vào một tệp tin log để theo dõi và phân tích sau này. Tệp tin log có thể 
+chứa thông tin chi tiết về lỗi, thời gian xảy ra và các chi tiết khác giúp bạn xác định và khắc phục vấn đề.
+
+-Xử lý ngoại lệ: Khi sử dụng SQLite3 và Python, bạn có thể sử dụng khối try-except để xử lý ngoại lệ. Khi có lỗi xảy ra trong 
+quá trình thao tác với cơ sở dữ liệu, bạn có thể bắt ngoại lệ và gửi thông báo lỗi cho người dùng.
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+3.()Bạn đã xử lý cách thức hiển thị danh sách sản phẩm và các thuộc tính liên quan bằng cách nào?
+
+9.Làm thế nào bạn đã xử lý các tương tác giữa các chức năng, chẳng hạn như khi người dùng tìm kiếm sản 
+phẩm và sau đó chỉnh sửa hoặc xóa sản phẩm đó?
+
+5.Làm thế nào bạn đã xử lý việc cập nhật thông tin sản phẩm khi người dùng sửa đổi một sản phẩm đã tồn 
+tại trong cơ sở dữ liệu?
+
+
+3(de),5(de),9(làm theo cách riêng)
